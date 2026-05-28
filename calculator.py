@@ -1,6 +1,11 @@
 def addition(a, b):
     return a + b
 
+
+def division(a, b):
+    return a / b
+
+
 def main():
     # Ask the user for two numbers
     num1 = float(input("Enter the first number: "))
@@ -8,9 +13,12 @@ def main():
 
     # Perform addition
     result = addition(num1, num2)
-    
+    result_division = division(num1, num2)
+
     # Display the result
     print(f"The sum of {num1} and {num2} is: {result}")
+    print(f"The quotient of {num1} and {num2} is: {result_division}")
+
 
 if __name__ == "__main__":
     main()
