@@ -1,5 +1,5 @@
 import pytest
-from calculator import addition
+from calculator import addition, subtraction
 
 
 def test_addition_positive_numbers():
@@ -25,3 +25,24 @@ def test_addition_zero():
 
 def test_addition_strings():
     assert addition("hello", " world") == "hello world"
+
+
+def test_subtraction_positive_numbers():
+    assert subtraction(5, 3) == 2
+
+
+def test_subtraction_negative_numbers():
+    assert subtraction(-4, -6) == 2
+
+
+def test_subtraction_mixed_sign():
+    assert subtraction(-3, 7) == -10
+
+
+def test_subtraction_floats():
+    assert subtraction(3.5, 1.5) == pytest.approx(2.0)
+
+
+def test_subtraction_zero():
+    assert subtraction(5, 0) == 5
+    assert subtraction(0, 5) == -5
