@@ -2,6 +2,10 @@ def addition(a, b):
     return a + b
 
 
+def multiplication(a, b):
+    return a * b
+
+
 def subtraction(a, b):
     return a - b
 
@@ -13,10 +17,12 @@ def main():
 
     # Perform addition
     result = addition(num1, num2)
+    result_multiplication = multiplication(num1, num2)
     result_subtraction = subtraction(num1, num2)
 
     # Display the result
     print(f"The sum of {num1} and {num2} is: {result}")
+    print(f"The product of {num1} and {num2} is: {result_multiplication}")
     print(f"The difference of {num1} and {num2} is: {result_subtraction}")
 
 

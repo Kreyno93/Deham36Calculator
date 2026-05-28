@@ -1,5 +1,5 @@
 import pytest
-from calculator import addition, subtraction
+from calculator import addition, multiplication, subtraction
 
 
 def test_addition_positive_numbers():
